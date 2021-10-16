@@ -10,7 +10,7 @@ class CdkPythonStack(cdk.Stack):
         # The code that defines your stack goes here
         _s3.Bucket(
             self,
-            "myFirstcdkBucket",
+            "myFirstcdkBucket2021",
             bucket_name="myfirstcdk272001",
             versioned=True,
             encryption=_s3.BucketEncryption.KMS_MANAGED
