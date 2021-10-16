@@ -12,6 +12,7 @@ class CdkPythonStack(cdk.Stack):
             self,
             "myFirstcdkBucket2021",
             bucket_name="myfirstcdk272001",
-            versioned=True,
-            encryption=_s3.BucketEncryption.KMS_MANAGED
+            versioned=False,
+            encryption=_s3.BucketEncryption.S3_MANAGED,
+            block_public_access= _s3._s3.BlockPublicAccess.Block_ALL
             )
